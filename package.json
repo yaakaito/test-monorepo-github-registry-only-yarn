@@ -1,0 +1,9 @@
+{
+  "name": "test-monorepo-github-registry-only-yarn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:yaakaito/test-monorepo-github-registry-only-yarn.git",
+  "author": "yaakaito <yaakaito@gmail.com>",
+  "license": "MIT",
+  "private": true
+}

@@ -9,7 +9,6 @@ const main = async() => {
     const log = console.log
     try {
         const ws = await workspace()
-        console.log(ws)
         const version = semver.inc(ws.version, program.args[0])
         if (!version) {
             throw 'Invalid version'

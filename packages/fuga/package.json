@@ -10,5 +10,8 @@
     "type": "git",
     "url": "ssh://git@github.com/yaakaito/test-monorepo-github-registry-only-yarn.git",
     "directory": "packages/hoge"
+  },
+  "scripts": {
+    "build": "tsc"
   }
 }

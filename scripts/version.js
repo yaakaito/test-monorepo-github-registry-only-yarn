@@ -17,12 +17,12 @@ const main = async() => {
         for (const pkg of pkgs) {
             pkg.packageJson.version = version
             const { dependencies, peerDependencies } = pkg.packageJson
-            for (const otherPackage of pkgs) {
-                if (dependencies && dependencies[otherPackage.name]) {
-                    dependencies[otherPackage.name] = version
+            for (const { name } of pkgs) {
+                if (dependencies && dependencies[name]) {
+                    dependencies[name] = version
                 }
-                if (peerDependencies && peerDependencies[otherPackage.name]) {
-                    peerDependencies[otherPackage.name] = version
+                if (peerDependencies && peerDependencies[name]) {
+                    peerDependencies[name] = version
                 }
             }
             await pkg.update()

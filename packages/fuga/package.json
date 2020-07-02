@@ -15,5 +15,8 @@
     "version": "yarn version",
     "publish": "yarn publish",
     "build": "tsc"
+  },
+  "dependencies": {
+    "@yaakaito/test-monorepo-hoge": "1.0.3"
   }
 }

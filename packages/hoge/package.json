@@ -1,6 +1,6 @@
 {
   "name": "@yaakaito/test-monorepo-hoge",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
@@ -12,6 +12,8 @@
     "directory": "packages/hoge"
   },
   "scripts": {
+    "version": "yarn version",
+    "publish": "yarn publish",
     "build": "tsc"
   }
 }

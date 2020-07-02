@@ -1,9 +1,16 @@
 {
-  "name": "test-monorepo-github-registry-only-yarn",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:yaakaito/test-monorepo-github-registry-only-yarn.git",
-  "author": "yaakaito <yaakaito@gmail.com>",
-  "license": "MIT",
-  "private": true
+  "private": true,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "build": "yarn workspaces run build"
+  },
+  "version": "0.0.0"
 }

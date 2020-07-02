@@ -35,6 +35,7 @@ const main = async() => {
     }
     catch(e) {
         log(e)
+        process.exit(2)
     }
 }
 

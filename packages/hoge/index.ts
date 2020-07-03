@@ -1,2 +1,2 @@
 export default 'fuga'
-console.log('hiee!!')
+console.log('hi!!')

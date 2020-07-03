@@ -22,6 +22,6 @@ jobs:
       - run: yarn build
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: |
+        run: |
           npm config set //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN
           ./scripts/publish.js

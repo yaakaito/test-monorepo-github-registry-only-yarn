@@ -33,9 +33,7 @@ jobs:
           VERSION=`node -e "console.log(require('./package.json').version)"`
           git config user.name "${GITHUB_ACTOR}"
           git add .
-          git commit "chore(release): ${VERSION}"
+          git commit -m "chore(release): ${VERSION}"
           git push https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git master
           git tag $VERSION 
           git push https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git $VERSION
-
-

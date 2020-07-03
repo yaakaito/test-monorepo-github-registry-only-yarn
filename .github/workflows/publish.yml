@@ -2,10 +2,10 @@ name: publish
 on: 
   push:
     tags:
-      - 'v*.*.*'
-
+      - *
+    
 jobs:
-  version:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

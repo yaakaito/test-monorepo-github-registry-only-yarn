@@ -15,6 +15,7 @@ const packages = async (dir = path.resolve(__dirname, '../../packages'))  => {
             const { name } = packageJson
             packages.push({
                 name,
+                path: path.resolve(dir, dirent.name),
                 packageJson,
                 update: async function () {
                     await writeJson(packageJsonPath, this.packageJson)

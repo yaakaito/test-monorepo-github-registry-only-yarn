@@ -1,6 +1,6 @@
 {
   "name": "@yaakaito/test-monorepo-fuga",
-  "version": "1.0.6",
+  "version": "1.0.9",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
@@ -12,11 +12,9 @@
     "directory": "packages/hoge"
   },
   "scripts": {
-    "version": "yarn version",
-    "publish": "yarn publish",
     "build": "tsc"
   },
   "dependencies": {
-    "@yaakaito/test-monorepo-hoge": "1.0.6"
+    "@yaakaito/test-monorepo-hoge": "1.0.9"
   }
 }

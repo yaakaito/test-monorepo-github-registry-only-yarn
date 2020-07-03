@@ -1,6 +1,6 @@
 {
   "name": "@yaakaito/test-monorepo-fuga",
-  "version": "1.1.15",
+  "version": "1.1.16",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
@@ -15,6 +15,6 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@yaakaito/test-monorepo-hoge": "1.1.15"
+    "@yaakaito/test-monorepo-hoge": "1.1.16"
   }
 }
